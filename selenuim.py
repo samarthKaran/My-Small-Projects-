@@ -12,7 +12,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 
 driver.get("https://accounts.xyz.com/login")
 
-assert "XYZ" in driver.title
+assert "XYZ" in driver.title             #this allows  to verify specifc keyword on a login page to verify if the url is rightly reached 
 
 username = driver.find_element_by_id("Email")
 username.clear()
